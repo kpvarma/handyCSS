@@ -1,0 +1,69 @@
+$collection: (2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 200);
+
+/* Clear Both Classes */
+.cl { clear: both; display: block; }
+
+@each $item in $collection {
+  .cl-#{$item} { clear: both; display: block; height: #{$item}px; }
+}
+
+/* ---------------------- */
+/* Margin/Padding Classes */
+/* ---------------------- */
+
+.margin-auto { margin: 0px auto !important; }
+
+@each $item_type in margin, padding {
+  
+  /* e.g: margin-10, padding-10 */
+  @each $item in $collection {
+    .#{$item_type}-#{$item} { #{$item_type}: #{$item}px !important; }
+  }
+
+  /* e.g: margin-top-10, padding-top-10 */
+  @each $item in $collection {
+    .#{$item_type}-top-#{$item} { #{$item_type}-top: #{$item}px !important; }
+  }
+
+  /* e.g: margin-bottom-10, padding-bottom-10 */
+  @each $item in $collection {
+    .#{$item_type}-bottom-#{$item} { #{$item_type}-bottom: #{$item}px !important; }
+  }
+  
+  /* e.g: margin-left-10, padding-left-10 */
+  @each $item in $collection {
+    .#{$item_type}-left-#{$item} { #{$item_type}-left: #{$item}px !important; }
+  }
+  
+  /* e.g: margin-right-10, padding-right-10 */
+  @each $item in $collection {
+    .#{$item_type}-right-#{$item} { #{$item_type}-right: #{$item}px !important; }
+  }
+
+  /* ------------------------- */
+  /* Negative margins/paddings */
+  /* ------------------------- */
+
+  /* e.g: margin-top-minus-10, padding-top-minus-10 */
+  @each $item in $collection {
+    .#{$item_type}-top-minus-#{$item} { #{$item_type}-top: -#{$item}px !important; }
+  }
+
+  /* e.g: margin-bottom-minus-10, padding-bottom-minus-10 */
+  @each $item in $collection {
+    .#{$item_type}-bottom-minus-#{$item} { #{$item_type}-bottom: -#{$item}px !important; }
+  }
+
+  /* e.g: margin-left-minus-10, padding-left-minus-10 */
+  @each $item in $collection {
+    .#{$item_type}-left-minus-#{$item} { #{$item_type}-left: -#{$item}px !important; }
+  }
+  
+  /* e.g: margin-right-minus-10, padding-right-minus-10 */
+  @each $item in $collection {
+    .#{$item_type}-right-minus-#{$item} { #{$item_type}-right: -#{$item}px !important; }
+  }
+  
+}
+
+
