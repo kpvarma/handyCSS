@@ -64,6 +64,10 @@ $collection: (2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 200);
     .#{$item_type}-right-minus-#{$item} { #{$item_type}-right: -#{$item}px !important; }
   }
   
+  /* pull classes */
+  .float-left, .pull-left { float: left; }
+  .float-right, .pull-right { float: right; }
+  
 }
 
 
