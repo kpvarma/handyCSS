@@ -1,5 +1,9 @@
 $collection: (2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 200);
 
+/* pull classes */
+.float-left, .pull-left { float: left; }
+.float-right, .pull-right { float: right; }
+
 /* Clear Both Classes */
 .cl { clear: both; display: block; }
 
@@ -7,67 +11,62 @@ $collection: (2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 200);
   .cl-#{$item} { clear: both; display: block; height: #{$item}px; }
 }
 
-/* ---------------------- */
-/* Margin/Padding Classes */
-/* ---------------------- */
+/* Margin and Padding Class */
+/* ------------------------ */
 
-.margin-auto { margin: 0px auto !important; }
 
-@each $item_type in margin, padding {
-  
-  /* e.g: margin-10, padding-10 */
-  @each $item in $collection {
-    .#{$item_type}-#{$item} { #{$item_type}: #{$item}px !important; }
-  }
+/* e.g: ma */
+.ma { margin: 0px auto !important; }
 
-  /* e.g: margin-top-10, padding-top-10 */
-  @each $item in $collection {
-    .#{$item_type}-top-#{$item} { #{$item_type}-top: #{$item}px !important; }
-  }
-
-  /* e.g: margin-bottom-10, padding-bottom-10 */
-  @each $item in $collection {
-    .#{$item_type}-bottom-#{$item} { #{$item_type}-bottom: #{$item}px !important; }
-  }
-  
-  /* e.g: margin-left-10, padding-left-10 */
-  @each $item in $collection {
-    .#{$item_type}-left-#{$item} { #{$item_type}-left: #{$item}px !important; }
-  }
-  
-  /* e.g: margin-right-10, padding-right-10 */
-  @each $item in $collection {
-    .#{$item_type}-right-#{$item} { #{$item_type}-right: #{$item}px !important; }
-  }
-
-  /* ------------------------- */
-  /* Negative margins/paddings */
-  /* ------------------------- */
-
-  /* e.g: margin-top-minus-10, padding-top-minus-10 */
-  @each $item in $collection {
-    .#{$item_type}-top-minus-#{$item} { #{$item_type}-top: -#{$item}px !important; }
-  }
-
-  /* e.g: margin-bottom-minus-10, padding-bottom-minus-10 */
-  @each $item in $collection {
-    .#{$item_type}-bottom-minus-#{$item} { #{$item_type}-bottom: -#{$item}px !important; }
-  }
-
-  /* e.g: margin-left-minus-10, padding-left-minus-10 */
-  @each $item in $collection {
-    .#{$item_type}-left-minus-#{$item} { #{$item_type}-left: -#{$item}px !important; }
-  }
-  
-  /* e.g: margin-right-minus-10, padding-right-minus-10 */
-  @each $item in $collection {
-    .#{$item_type}-right-minus-#{$item} { #{$item_type}-right: -#{$item}px !important; }
-  }
-  
-  /* pull classes */
-  .float-left, .pull-left { float: left; }
-  .float-right, .pull-right { float: right; }
-  
+/* margin - e.g: m-10 */
+@each $item in $collection {
+  .m-#{$item} { margin: #{$item}px !important; }
 }
+
+/* margin-top - e.g: mt-10 */
+@each $item in $collection {
+  .mt-#{$item} { margin-top: #{$item}px !important; }
+}
+
+/* margin-right - e.g: mr-10 */
+@each $item in $collection {
+  .mr-#{$item} { margin-right: #{$item}px !important; }
+}
+
+/* margin-bottom - e.g: mb-10 */
+@each $item in $collection {
+  .mb-#{$item} { margin-bottom: #{$item}px !important; }
+}
+
+/* magin-left - e.g: ml-10 */
+@each $item in $collection {
+  .ml-#{$item} { margin-left: #{$item}px !important; }
+}
+
+/* padding - e.g: p-10 */
+@each $item in $collection {
+  .p-#{$item} { padding: #{$item}px !important; }
+}
+
+/* padding-top - e.g: pt-10 */
+@each $item in $collection {
+  .pt-#{$item} { padding-top: #{$item}px !important; }
+}
+
+/* padding-right - e.g: pr-10 */
+@each $item in $collection {
+  .pr-#{$item} { padding-right: #{$item}px !important; }
+}
+
+/* padding-bottom - e.g: pb-10 */
+@each $item in $collection {
+  .pb-#{$item} { padding-bottom: #{$item}px !important; }
+}
+
+/* padding-left - e.g: pl-10 */
+@each $item in $collection {
+  .pl-#{$item} { padding-left: #{$item}px !important; }
+}
+
 
 

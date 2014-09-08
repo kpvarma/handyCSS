@@ -13,20 +13,20 @@
 .text-color-white { color: #FFF; }
 .text-color-green { color: green; }
 
-.font-size-10{font-size:10px !important;}
-.font-size-11{font-size:11px !important;}
-.font-size-12{font-size:12px !important;}
-.font-size-13{font-size:13px !important;}
-.font-size-14{font-size:14px !important;}
-.font-size-15{font-size:15px !important;}
-.font-size-16{font-size:16px !important;}
-.font-size-18{font-size:18px !important;}
-.font-size-20{font-size:20px !important;}
-.font-size-22{font-size:22px !important;}
-.font-size-24{font-size:24px !important;}
+$font_size_collection: (10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 28, 30, 32, 34, 36, 40, 48, 56);
+@each $item in $font_size_collection {
+  .fs-#{$item} { font-size: #{$item}px !important; }
+}
 
-.line-height-10{line-height:10px !important;}
-.line-height-20{line-height:20px !important;}
-.line-height-30{line-height:30px !important;}
-.line-height-40{line-height:40px !important;}
+$line_height_collection: (10, 20, 30, 40);
+@each $item in $line_height_collection {
+  .lh-#{$item} { line-height: #{$item}px !important; }
+}
+
+h1.heading { font-size: 2em; }
+h2.heading { font-size: 1.5em;  color: #4b4b4b}
+h3.heading { font-size: 1.17em; }
+h4.heading { font-size: 1em; color: #4b4b4b }
+h5.heading { font-size: .90em; }
+h6.heading { font-size: .85em; color: #4b4b4b }
 
