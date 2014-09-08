@@ -1,0 +1,113 @@
+.wrapper {
+    padding: 1% 2%;
+    width:96%;
+}
+
+header {border-top: 6px solid #666;}
+
+/* ------------------ */
+/*   Header Styles    */
+/* ------------------ */
+
+header nav {
+  display:none;
+}
+
+header {width:100%;padding:2% 0;}
+
+header a.brand img {
+  float: left;
+  height: 50px;
+}
+
+header a.brand .writing {
+  float: left;
+  margin-left:10px;
+}
+
+/* Header Nav Styles */
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    display: block;
+    margin-bottom: 5px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    
+    text-decoration:none;
+
+    color: #666;
+}
+
+header nav a.active, header nav a:hover,
+header nav a:visited {
+    color: #466876;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------ */
+/*   Media Queries    */
+/* ------------------ */
+
+@media only screen and (min-width: 480px) {
+  
+  header nav {
+    display: block;
+    clear:both;
+  }
+  
+  /* Nav Menu */
+
+  header nav a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 5px 2%;
+    margin-bottom: 0;
+    margin-top:5px;
+  }
+
+  header nav li:first-child a {
+    margin-left: 0;
+  }
+
+  header nav li:last-child a {
+    margin-right: 0;
+  }
+
+  /* IE Fixes */
+
+  header nav ul li {
+    display: inline;
+  }
+
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header nav {
+    clear:none;
+    float: right;
+    width: 38%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  /* Maximal Width */
+  .wrapper {
+    width: 1026px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}

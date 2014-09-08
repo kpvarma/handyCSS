@@ -1,4 +1,4 @@
 handyCSS
 ========
 
-A bunch of handy CSS which can be used directly in any project, developed with SCSS
+A bunch of handy CSS, developed with SCSS along with the famous Normalize.css which makes it easier to kick start any project.
