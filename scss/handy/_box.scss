@@ -17,8 +17,7 @@
 	-moz-box-shadow: 2px 2px 5px #c1c1c1;
 	box-shadow: 2px 2px 5px #c1c1c1;
 
-  h1.heading { font-size: 18px; color: $heading-color; margin: 4px 2px; }
-  a { font-size: 16px; color: $link-color }
+  a.heading, h1.heading { font-size: 18px; color: $heading-color; margin: 4px 2px; }
 
 }
 

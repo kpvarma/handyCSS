@@ -36,14 +36,10 @@
   -moz-box-shadow: 2px 2px 5px #c1c1c1;
   box-shadow: 2px 2px 5px #c1c1c1;
 }
-.box h1.heading {
+.box a.heading, .box h1.heading {
   font-size: 18px;
   color: #960D2E;
   margin: 4px 2px;
-}
-.box a {
-  font-size: 16px;
-  color: #1370AD;
 }
 
 .box.active {
