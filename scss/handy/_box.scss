@@ -17,8 +17,11 @@
 	-moz-box-shadow: 2px 2px 5px #c1c1c1;
 	box-shadow: 2px 2px 5px #c1c1c1;
 
-  h1.heading { font-size: 18px; color: $heading-color; margin: 4px 2px; }
-  a { font-size: 16px; color: $link-color }
+  .heading1 { font-size: 24px; color: $heading1-color; margin: 4px 0px; }
+  .heading2 { font-size: 16px; color: $heading2-color; margin: 4px 0px; }
+  .heading3 { font-size: 14px; color: $heading1-color; margin: 4px 0px; }
+  .heading4 { font-size: 12px; color: $heading2-color; margin: 4px 0px; font-weight: bold}
+  .content { font-size: 12px; color: $content-color; }
 
 }
 
